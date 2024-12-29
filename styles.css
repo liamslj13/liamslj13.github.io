@@ -21,26 +21,16 @@ header {
     box-sizing: border-box;
 }
 
-.introtext {
-    display: block;
-    text-align: center;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    margin: 0 auto;
+.logo {
+    width: 50px;
+    height: auto;
 }
-
-
 
 #nameplate {
     margin: 0;
     padding: 0 1rem;
     font-size: 1.5rem;
     color: white;
-}
-
-.logo {
-    width: 50px;
-    height: auto;
 }
 
 nav ul {
@@ -65,7 +55,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: linear-gradient(135deg, rgba(75, 0, 130, 0.8), rgba(29, 29, 58, 0.8)), center center/cover;
+    background: linear-gradient(135deg, rgba(75, 0, 130, 0.8), rgba(29, 29, 58, 0.8));
     color: white;
     height: 100vh;
     display: flex;
@@ -77,8 +67,7 @@ nav ul li a:hover {
     animation: fadeIn 1.5s forwards;
 }
 
-.hero .photo {
-    justify-content: center;
+.photo {
     width: 250px;
     height: 250px;
     background-color: #4b0082;
@@ -91,11 +80,12 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 2rem;
-    text-align: center;
 }
 
-.introtext, #introtext {
-    margin: 1rem 0;
+.introtext {
+    display: block;
+    margin: 1rem auto;
+    padding: 0 10rem;
     line-height: 1.6;
     text-align: justify;
     text-justify: inter-word;
@@ -103,29 +93,9 @@ nav ul li a:hover {
 
 .emails {
     margin-top: 1rem;
-    font-size: 0.5rem !important;
+    font-size: 0.5rem;
     text-align: center;
-}
-
-
-.hero h2, .hero h3 {
-    margin: 0.5rem 0;
-}
-
-.photo {
-    display: block;
-    margin: 0 auto 1rem auto;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    background-color: #4b0082;
-}
-
-
-.emails {
     padding: 0.5rem;
-    text-align: center;
 }
 
 .section {
@@ -149,7 +119,6 @@ nav ul li a:hover {
     background: linear-gradient(145deg, #3b3b57, #262634);
     border-radius: 10px;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.5);
-    color: #e0dcdc;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
