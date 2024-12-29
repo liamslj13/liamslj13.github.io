@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #e0dcdc;
+    background-color: #1e1e2f;
+    overflow-x: hidden;
+}
+
+header {
+    background: #4b0082;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.introtext {
+    display: block;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin: 0 auto;
+}
+
+
+
+#nameplate {
+    margin: 0;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #2e2e4a;
+    color: #d4b1f4;
+}
+
+.hero {
+    background: linear-gradient(135deg, rgba(75, 0, 130, 0.8), rgba(29, 29, 58, 0.8)), center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.hero .photo {
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background-color: #4b0082;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.introtext, #introtext {
+    margin: 1rem 0;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.emails {
+    margin-top: 1rem;
+    font-size: 0.5rem !important;
+    text-align: center;
+}
+
+
+.hero h2, .hero h3 {
+    margin: 0.5rem 0;
+}
+
+.photo {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #4b0082;
+}
+
+
+.emails {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.section {
+    padding: 2rem;
+    text-align: center;
+    background: #2a2a3b;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    background: linear-gradient(145deg, #3b3b57, #262634);
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: #e0dcdc;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(145deg, #4b0082, #2e2e4a);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: #6a0dad;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #2a2a3b;
+    color: #e0dcdc;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
