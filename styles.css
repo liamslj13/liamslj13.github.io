@@ -37,8 +37,8 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
-    margin: 0;
     padding: 0;
+    margin: 0 0 0 auto;
 }
 
 nav ul li a {
@@ -155,4 +155,35 @@ footer {
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(10px); }
     100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    #nameplate {
+        margin-top: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        align-items: flex-start;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        height: auto;
+        padding: 1rem;
+    }
 }
