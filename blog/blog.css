@@ -1,0 +1,98 @@
+body {
+    background-color: #fefefe;
+    color: #222;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0 20px;
+    line-height: 1.75;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 1.5em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.bio-text {
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 0 1em;
+    text-align: left;
+    font-size: 1.05em;
+}
+
+a {
+    color: #005ea2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 1.5em;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+.math-display {
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+mjx-container {
+    font-size: 1.1em !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #dddddd;
+    }
+
+    a {
+        color: #79b8ff;
+    }
+
+    h1, h2, h3, h4 {
+        color: #ffffff;
+    }
+}
+
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #005ea2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+.home-button:hover {
+    background-color: #00457c;
+}

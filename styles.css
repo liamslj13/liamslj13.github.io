@@ -36,3 +36,22 @@ body {
     margin: 0;
     padding: 0 20px;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #dddddd;
+    }
+
+    a {
+        color: #79b8ff;
+    }
+
+    .social-links a {
+        color: #79b8ff;
+    }
+
+    h1, h2, h3, h4 {
+        color: #ffffff;
+    }
+}
