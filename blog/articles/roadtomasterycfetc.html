@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Road to Competitive Programming Mastery</title>
+    <link rel="stylesheet" href="/blog/blog.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+</head>
+<body>
+
+    <a href="/blog/blog.html" class="home-button">← Blog Home</a>
+
+    <h1>
+        <strong>Journey to Competitive Programming Mastery</strong> <br>
+        Liam Jay <br> 
+        <h4>(last edited: 2025/06/27)</h4>
+    </h1>
+
+    <div class="hisshou">
+        <img src="/assets/hisshousticker.png" alt="portrait" width="300" height="300">
+    </div>
+
+    <div class="bio-text">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#section1">Introduction</a></li>
+            <li><a href="#section2">The Plan</a></li>
+            <li><a href="#section3">My Current Level</a></li>
+            <li><a href="#section4">A Brief Conclusion</a></li>
+        </ul>
+
+        <h3 id="section1">Introduction</h3>
+        <p>
+            Recently, I have started to realize that I have a growing interest in DSA and similar topics.
+            Although I am unsure of where this stems from, I have started to also increasingly take a liking to
+            competitive programming. Furthermore I have begun my journey on Code Forces! I do have some experience with
+            online judges such as Kattis or LeetCode, but Code Forces seems like a great place to train my problem
+            solving skills further. For ICPC or other formal competition prep I may choose to stick with Kattis though. 
+            <br><br>
+            The goal for me on Code Forces is to reach CM (Candidate Master), which sits around ~1900 elo points 
+            and slots you a spot in the top 5000 users on the website. I understand this is quite ambitions and at
+            the moment I am doing <em><strong>terrible</strong></em>! This is okay though. I currently have a modest 778 elo points
+            and the title <em>newbie</em>, indicating that I suck at competitive programming (ranked 107488 globally).
+            However, the goal at the moment is not the elo rating, nor should it be. If I really want to reach my goal of CM,
+            I will first need to study quite a lot of DSA, and I look forward to the journey ahead of me.
+        </p>
+
+        <h3 id="section2">The Plan</h3>
+        <p>
+            There is no plan!
+            <br><br>
+            If I take this too seriously then I will most likely fall out of love with the process. I am dedicating quite a bit of time
+            to understanding the underlying concepts behind problems though. I've gotten my hands on a copy of the book <a href="https://cpbook.net/">CP4</a>,
+            which is a text written with ICPC candidates in mind. It walks you through the basics of competitive programming, such as what language to use for certain problems, all the way
+            to rare or uncommon algorithms that you may not even see in your competitive programming career. One of my favorite parts of this text thus far is the 
+            problems they supply you with for each topic. At the end of a section, the authors have kindly left problems that are in real repositories such as 
+            <a href="https://open.kattis.com/"><em>Kattis</em></a> or <a href="https://onlinejudge.org/"><em>UVa (Online Judge)</em></a>. I also plan to continue doing the 
+            <a href="https://cses.fi/problemset/"><em>CSES problem set</em></a> for some fundamentals, as I am a firm believer in curated lists of problems for times when you aren't sure
+            how to proceed with your studies.
+        </p>
+
+        <h3 id="section3">My Current Level (more in depth)</h3>
+        <p>
+            Let's quantify my current level a bit more. As previously mentioned, I am rated 778 on Code Forces, having competed in 3 contests since starting with the website. A contest usually ends for me
+            after solving the first problem in an unholy amount of time, and then understanding the second problem, but failing to code it due to missing a condition or two during the writing process.
+            This is actually very apparent in my rankings, with my lowest ranking in a contest being in a Div. 3 competition, in which I placed 22502. Again though, I think this is great. Once the initial
+            elo boosting that comes from merely participating wears off, I will have nothing but my own improvement to bank on, or else I will remain in the newbie bracket. If I continue to improve, my elo
+            will rise naturally. I can generally solve 800 - 1000 rated problems in a low pressure setting, but will occasionally look at editorials to give me some guidance if I am stuck for too long.
+            <br><br>
+            On Kattis, I have found the style that problems are written in is much more approachable than Code Forces. This may be a bit more apparent in my rating, as my current rank is 13472 globally, and 
+            I have a score of 107.6 (prev. 110.1). The breadth of problems that I have solved on Kattis is also a bit wider as well, having experimented with basic DP, some bit manipulation, and a linear 
+            recurrence problem that required matrix multiplication for fast calculation (my first Kattis hard!). There are no contests on Kattis though, or at least not on the scale of Code Forces as most are
+            invitational. However, when I return back to Canada later this year, we will mainly use Kattis for both training and competing in competitive programming contests.
+            <br><br>
+            LeetCode I haven't touched in a while. With 61 solved problems and a contest rating of 1476 (globally 366906/711693), it is evident I'm not doing too hot. I don't find leetcode to be very interesting,
+            but I might come back to it after a while to see if I have improved at all!
+            <br><br>
+            As for some other sites that people may know (or that I have previously mentioned), I have solved 6/400 on CSES (very low, but up from here I promise), and on AtCoder I currently have no rating at all,
+            but I plan to participate in a contest to change this soon.
+        </p>
+        <p>
+            Now we will take a look at a problem I have solved from a Code Forces contest, and keep in mind I struggled to solve this lol.
+            <br><br>
+            <a href="https://codeforces.com/contest/2121/problem/A"><strong>Problem: 2121A, Letter Home</strong></a>
+            <br>
+            You are given an array of distinct integers \( x_1, x_2, ... x_n\) and an integer \(s\). 
+            <br>
+            Initially, you are at position \(pos = s\) on the \(X\) axis. In one step, you can perform exactly one of the following two actions:
+            <li>Move from position \(pos\) to position \(pos + 1\).</li>
+            <li>Move from position \(pos\) to position \(pos - 1\).</li>
+            A sequence of steps will be considered successful if, during the entire journey, you visit each position \(x_i\) on the \(X\)
+            axis at least once. Note that the initial position \(pos = s\) is also considered visited. 
+            <br>
+            Your task is to determine the minimum number of steps in any successful sequence of steps. <br>
+            <h4>Input</h4>
+            <br>
+            Each test consists of multiple test cases. The first line contains a single integer \(t(1 \le t \le 1000)\) — the number of test cases. 
+            The description of the test cases follows. 
+            <br><br>
+            The first line of each test case contains two integers \(n\) and \(s\) \((1 \le n \le 10, 1 \le s \le 100)\) — the number of positions to visit and the starting position.
+            <br><br>
+            The second line of each test case contains \(n\) integers \(x_1, x_2, ... , x_n (1 \le x_i \le 100)\). It is guaranteed that for all \(1 \le i \lt n\), it holds that \(x_i \lt x_{i+1}\).
+            <h4>Output</h4>
+            For each test case, output the minimum number of steps in any successful sequence of steps.
+        </p>
+        <p>
+            This problem is <strong><em>really</em></strong> easy. But guess how long it took me to solve it! Almost 2 hours. <strong>2 hours!!!</strong> To make things worse, my code is a little bit ugly.
+            <pre><code class="language-cpp">
+#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+void solve() {
+int n,s,x; // s = start, n = len
+int l = 101, r = -1;
+cin&gt;&gt;n&gt;&gt;s;
+for (int i=0;i&gt;n;i++) {
+    cin&gt;&gt;x;
+    l = min(x, l); r = max(x, r);
+}
+if (s >= r) {
+    cout&lt;&lt;s-l&lt;&lt;'\n';
+} else if (s <= l) {
+    cout&lt;&lt;r-s&lt;&lt;'\n';
+} else if (s - l <= r - s) {
+    cout&lt;&lt;s - l + r - l&lt;&lt;'\n';
+} else {
+    cout&lt;&lt;r - s + r - l&lt;&lt;'\n';
+}
+
+int main() {
+    int t;
+    cin&gt;&gt;t;
+    while (t--) solve();
+    return 0;
+}
+            </code></pre>
+        Now, to be a bit fair to myself, this was the worst I have ever done by a long shot, with both Div. 2 contests
+        I have participated in and their problem A taking much much less time for me to solve. However, I really just wanted to 
+        display how slow I am at the moment. Hopefully this makes it much easier to understand where the starting line is, and hopefully 
+        makes the difference when I am closer to my goal all the more satisfying.
+    </p>
+    <h3 id="section4">Conclusion</h3>
+    <p>
+        This is my first real post on this blog, and I would like to end it here! If you have read this far, I extend you my thanks. If all goes well, maybe
+        one day you will come back here to see me realize this ambitious goal I have set for myself. 
+        <br><br>
+        Until next time!
+        <br>
+        - Liam
+    </p> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+</html>
